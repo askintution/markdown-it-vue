@@ -1,32 +1,40 @@
 {
-  "name": "markdown-it-vue",
-  "version": "1.0.11",
-  "private": false,
-  "description": "The vue lib for markdown-it",
+  "_from": "markdown-it-vue",
+  "_id": "markdown-it-vue@1.0.11",
+  "_inBundle": false,
+  "_integrity": "sha1-xOPb6gmnL07Q1vbhtvGVKkHGS3Y=",
+  "_location": "/markdown-it-vue",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "markdown-it-vue",
+    "name": "markdown-it-vue",
+    "escapedName": "markdown-it-vue",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npm.taobao.org/markdown-it-vue/download/markdown-it-vue-1.0.11.tgz",
+  "_shasum": "c4e3dbea09a72f4ed0d6f6e1b6f1952a41c64b76",
+  "_spec": "markdown-it-vue",
+  "_where": "/Users/shenghuan/Documents/Artificial_Intelligence/资料/ssevenk.blog",
   "author": {
-    "name": "ravenq",
-    "e-mail": "flw_dream@126.com"
+    "name": "ravenq"
   },
-  "keywords": [
-    "markdown",
-    "markdown-it",
-    "markdown-it-plugin",
-    "vue",
-    "markdown-it-vue"
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
   ],
-  "files": [
-    "dist",
-    "doc",
-    "src"
-  ],
-  "scripts": {
-    "dev": "vue-cli-service serve ./example/main.js",
-    "build": "npm run build:lib && npm run build:example",
-    "lint": "vue-cli-service lint",
-    "build:example": "node --max_old_space_size=8192 node_modules/@vue/cli-service/bin/vue-cli-service.js build --dest example/dist ./example/main.js",
-    "build:lib": "node --max_old_space_size=8192 node_modules/@vue/cli-service/bin/vue-cli-service.js build --target lib ./src/index.js"
+  "bugs": {
+    "url": "https://github.com/ravenq/markdown-it-vueissues"
   },
-  "main": "dist/markdown-it-vue.umd.min.js",
+  "bundleDependencies": false,
   "dependencies": {
     "echarts": "^4.5.0",
     "flowchart.js": "^1.13.0",
@@ -52,6 +60,8 @@
     "mermaid": "^8.4.3",
     "vue": "^2.6.6"
   },
+  "deprecated": false,
+  "description": "The vue lib for markdown-it",
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.1.1",
     "@vue/cli-plugin-eslint": "^4.1.1",
@@ -76,23 +86,38 @@
       "parser": "babel-eslint"
     }
   },
+  "files": [
+    "dist",
+    "doc",
+    "src"
+  ],
+  "homepage": "https://github.com/ravenq/markdown-it-vue",
+  "keywords": [
+    "markdown",
+    "markdown-it",
+    "markdown-it-plugin",
+    "vue",
+    "markdown-it-vue"
+  ],
+  "license": "MIT",
+  "main": "dist/markdown-it-vue.umd.min.js",
+  "name": "markdown-it-vue",
   "postcss": {
     "plugins": {
       "autoprefixer": {}
     }
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ],
-  "bugs": {
-    "url": "https://github.com/ravenq/markdown-it-vueissues"
-  },
-  "homepage": "https://github.com/ravenq/markdown-it-vue",
-  "license": "MIT",
+  "private": false,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ravenq/markdown-it-vue.git"
-  }
+  },
+  "scripts": {
+    "build": "npm run build:lib && npm run build:example",
+    "build:example": "node --max_old_space_size=8192 node_modules/@vue/cli-service/bin/vue-cli-service.js build --dest example/dist ./example/main.js",
+    "build:lib": "node --max_old_space_size=8192 node_modules/@vue/cli-service/bin/vue-cli-service.js build --target lib ./src/index.js",
+    "dev": "vue-cli-service serve ./example/main.js",
+    "lint": "vue-cli-service lint"
+  },
+  "version": "1.0.11"
 }

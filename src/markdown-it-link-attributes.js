@@ -8,6 +8,7 @@ function findFirstMatchingConfig(link, configs) {
     return
   }
   var href = link.attrs[link.attrIndex('href')][1]
+  console.log("href:",href);
 
   for (i = 0; i < configs.length; ++i) {
     config = configs[i]
