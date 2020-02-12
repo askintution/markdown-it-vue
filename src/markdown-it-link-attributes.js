@@ -8,7 +8,6 @@ function findFirstMatchingConfig(link, configs) {
     return
   }
   var href = link.attrs[link.attrIndex('href')][1]
-  console.log("href:",href);
 
   for (i = 0; i < configs.length; ++i) {
     config = configs[i]
@@ -22,7 +21,7 @@ function findFirstMatchingConfig(link, configs) {
 }
 
 function applyAttributes(idx, tokens, attributes) {
-  Object.keys(attributes).forEach(function(attr) {
+  Object.keys(attributes).forEach(function (attr) {
     var attrIndex
     var value = attributes[attr]
 
@@ -56,7 +55,7 @@ function markdownitLinkAttributes(md, configs) {
 
   var defaultRender = md.renderer.rules.link_open || this.defaultRender
 
-  md.renderer.rules.link_open = function(tokens, idx, options, env, self) {
+  md.renderer.rules.link_open = function (tokens, idx, options, env, self) {
     var config = findFirstMatchingConfig(tokens[idx], configs)
     var attributes = config && config.attrs
 
@@ -69,7 +68,7 @@ function markdownitLinkAttributes(md, configs) {
   }
 }
 
-markdownitLinkAttributes.defaultRender = function(
+markdownitLinkAttributes.defaultRender = function (
   tokens,
   idx,
   options,
