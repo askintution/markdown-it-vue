@@ -25,6 +25,7 @@ import MarkdownItLinkAttributes from './markdown-it-link-attributes'
 // import MarkdownItMermaid from './markdown-it-plugin-mermaid'
 // import MarkdownItFlowchart from './markdown-it-plugin-flowchart'
 import MarkdownItHighlight from './markdown-it-highlight'
+import MarkdownItHtml5Media from './markdown-it-html5-media'
 import 'github-markdown-css'
 // import 'markdown-it-latex/dist/index.css'
 import 'markdown-it-icons/dist/index.css'
@@ -34,6 +35,7 @@ import 'markdown-it-icons/dist/index.css'
 // import flowchart from 'flowchart.js'
 
 const DEFAULT_OPTIONS_LINK_ATTRIBUTES = {
+  pattern: /^(file|https?):\/\//,
   attrs: {
     target: '_blank',
     rel: 'noopener'
@@ -131,6 +133,7 @@ export default {
       // .use(MarkdownItLatex)
       // .use(MarkdownItMathjax)
       .use(MarkdownItSourceMap)
+      .use(MarkdownItHtml5Media)
       // .use(MarkdownItMermaid)
       // .use(MarkdownItEcharts)
       // .use(MarkdownItFlowchart)

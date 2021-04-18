@@ -95,7 +95,7 @@
     "markdown-it-vue"
   ],
   "license": "MIT",
-  "main": "dist/markdown-it-vue.umd.min.js",
+  "main": "src/markdown-it-vue.vue",
   "name": "markdown-it-vue",
   "postcss": {
     "plugins": {

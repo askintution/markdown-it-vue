@@ -3,7 +3,8 @@
 // Adapted from https://github.com/markdown-it/markdown-it/blob/fbc6b0fed563ba7c00557ab638fd19752f8e759d/docs/architecture.md
 
 function findFirstMatchingConfig(link, configs) {
-  var i, config
+  var i, config;
+
   if (!link.attrIndex) {
     return
   }
